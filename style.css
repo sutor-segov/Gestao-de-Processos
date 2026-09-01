@@ -42,6 +42,7 @@ body {
     padding-right: 50px;
 }
 
+
 .segov-logo-area {
     display: flex;
     align-items: center;
@@ -111,8 +112,8 @@ body {
 }
 
 .info-section {
-    margin-top: 25px;
-    margin-bottom: 35px;
+    margin-top: 50px; 
+    margin-bottom: 40px;
 }
 
 .info-grid {
@@ -156,7 +157,7 @@ body {
 
 .tjac-container {
     max-width: 1400px;
-    margin: 0 auto 40px;
+    margin: 0 auto 60px; 
     padding: 0 40px;
 }
 
@@ -198,7 +199,7 @@ body {
 .value-chain {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px 40px 60px;
+    padding: 0 40px 60px; 
 }
 
 .explanation-centered {
@@ -316,10 +317,33 @@ body {
     border-left: 3px solid var(--vermelho-tjac);
 }
 
+.macro-tree {
+    max-width: 1400px;
+    margin: 0 auto 60px; 
+    padding: 0 40px;
+}
+
+.iframe-container {
+    margin-top: 30px;
+    width: 100%;
+    border: 1px solid var(--borda-cinza);
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 600px; 
+    border: none;
+    display: block;
+}
+
 .journey {
     display: flex;
     gap: 100px;
-    padding: 20px 40px 80px;
+    padding: 0 40px 60px; 
     max-width: 1400px;
     margin: 0 auto;
     align-items: flex-start;
@@ -433,8 +457,8 @@ body {
 }
 
 .portal-cta-section {
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 60px; 
 }
 
 .portal-cta-card {
@@ -480,7 +504,7 @@ body {
 
 .tjac-footer {
     border-top: 1px solid #1a3c40;
-    margin-top: 40px;
+    margin-top: 40px; 
     background-color: #ffffff;
 }
 
@@ -523,6 +547,12 @@ body {
     height: 20px;
     background-color: var(--vermelho-tjac);
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .iframe-container iframe {
+        height: 450px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -589,4 +619,19 @@ body {
     .info-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.page-title {
+    margin-top: 50px; 
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--vermelho-smoke); 
+    padding-bottom: 10px;
+}
+
+.page-title h1 {
+    color: var(--vermelho-tjac);
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    margin: 0;
 }
